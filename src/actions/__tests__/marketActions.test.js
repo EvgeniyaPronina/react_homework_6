@@ -1,4 +1,4 @@
-import {createOrder, moveOrderToFarm} from '../marketActions';
+import { createOrder, moveOrderToFarm } from '../marketActions';
 
 describe('Action creator createOrder', () => {
   it("Должен возвращать правильный action c типом 'CREATE_ORDER'", () => {

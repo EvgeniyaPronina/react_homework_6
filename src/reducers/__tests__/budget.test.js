@@ -1,9 +1,6 @@
 import budget from '../budget';
-import {MOVE_ORDER_TO_CUSTOMER} from '../../actions/farmTypes';
-import {
-  CREATE_ORDER,
-  MOVE_ORDER_TO_FARM
-} from '../../actions/marketTypes';
+import { MOVE_ORDER_TO_CUSTOMER } from '../../actions/farmTypes';
+import { CREATE_ORDER, MOVE_ORDER_TO_FARM } from '../../actions/marketTypes';
 
 describe('reducer budget', () => {
   it('экшен с типом MOVE_ORDER_TO_CUSTOMER увеличивает deliveryExpanse на 20', () => {
@@ -17,7 +14,7 @@ describe('reducer budget', () => {
   it('экшен с типом CREATE_ORDER увеличивает profit на action.payload.price', () => {
     const next = budget(undefined, {
       type: CREATE_ORDER,
-      payload: {price: 111}
+      payload: { price: 111 }
     });
     expect(next.profit).toEqual(111);
   });

@@ -3,7 +3,7 @@ import App from '../App';
 import Market from '../../Market';
 import Farm from '../../Farm';
 import Budget from '../../Budget';
-import {shallow} from 'enzyme';
+import { shallow } from 'enzyme';
 
 describe('Компонент App', () => {
   const wrapper = shallow(<App />);

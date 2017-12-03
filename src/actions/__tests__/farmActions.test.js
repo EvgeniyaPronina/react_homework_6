@@ -1,4 +1,4 @@
-import {moveOrderToCustomer} from '../farmActions';
+import { moveOrderToCustomer } from '../farmActions';
 
 describe('Action creator moveOrderToCustomer', () => {
   it("Должен возвращать правильный action c типом 'MOVE_ORDER_TO_CUSTOMER'", () => {

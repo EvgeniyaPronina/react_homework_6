@@ -1,11 +1,12 @@
-import { combineReducers } from 'redux'
-import {market, farm, budget} from './reducers'
+import { combineReducers } from 'redux';
+import { market } from './market';
+import { farm } from './farm';
+import { budget } from './budget';
 
 const rootReducer = combineReducers({
-   market,
-    farm,
-    budget
-})
+  market,
+  farm,
+  budget
+});
 
-export default rootReducer
-
+export default rootReducer;
