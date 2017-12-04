@@ -5,7 +5,7 @@ const farmInitialState = {
   orders: []
 };
 
-export function farm(state = farmInitialState, action) {
+export default function farm(state = farmInitialState, action) {
   switch (action.type) {
     case MOVE_ORDER_TO_FARM:
       return {

@@ -4,7 +4,7 @@ const marketInitialState = {
   orders: []
 };
 
-export function market(state = marketInitialState, action) {
+export default function market(state = marketInitialState, action) {
   switch (action.type) {
     case CREATE_ORDER:
       return {

@@ -10,7 +10,7 @@ const budgetInitialState = {
   deliveryExpanse: 0
 };
 
-export function budget(state = budgetInitialState, action) {
+export default function budget(state = budgetInitialState, action) {
   switch (action.type) {
     case CREATE_ORDER:
       return {
